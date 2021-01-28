@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Photo Blog</title>
+</head>
+
+<body>
+    <nav id="hamburger">
+        <a href="javascript:void(0)" id="close-button" onclick="closeNav()">×</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" id="signup">Signup</a>
+    </nav>
+    <nav id="ham">
+        <a href="index.html" id="arunit">Arunit</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" id="signup">Signup</a>
+        <button class="openNav" onclick="fun()"><i class="fa fa-bars"></i></button>
+    </nav>
+
+    <section>
+        <!-- Massimo Margagnoni -->
+        <img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg"><img
+            src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg"><img
+            src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg">
+
+        <!-- Giuseppe Milo -->
+        <img src="http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg"><img
+            src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg"><img
+            src="http://c2.staticflickr.com/6/5647/21137202535_404bf25729_b.jpg">
+
+        <!-- GÃķrlitzPhotography -->
+        <img src="http://c2.staticflickr.com/6/5588/14991687545_5c8e1a2e86_b.jpg"><img
+            src="http://c2.staticflickr.com/4/3888/14878097108_5997041006_b.jpg"><img
+            src="http://c2.staticflickr.com/8/7579/15482110477_0b0e9e5421_b.jpg">
+
+        <!-- All Photos Licensed Under Creative Commons 2.0 -->
+        <!-- https://creativecommons.org/licenses/by/2.0/legalcode  -->
+    </section>
+
+    <script>
+        function fun() {
+            var ham = document.getElementById("ham");
+            var openNav = document.getElementById("openNav");
+            var hamburger = document.getElementById("hamburger");
+            ham.style.visibility="none";
+            hamburger.style.width="250px";
+            openNav.style.display="none";
+        }
+        function closeNav(){
+            var openNav = document.getElementById("openNav");
+            var hamburger = document.getElementById("hamburger");
+            var ham = document.getElementById("ham");
+            hamburger.style.width="0";
+            ham.style.display="flex";
+            openNav.style.display="inline-block";
+        }
+    </script>
+</body>
+
+</html>
